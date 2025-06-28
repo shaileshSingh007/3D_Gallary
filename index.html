@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Model Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- 3D Model Container - 100% Fullscreen -->
+            <div class="model-container">
+                <iframe id="modelFrame" src="" frameborder="0" width="100%" height="100%"></iframe>
+                
+                <!-- Details Panel Overlay - At Bottom -->
+                <div class="details-panel-overlay">
+                    <div class="details-content">
+                        <!-- Model Selector Dropdown -->
+                        <div class="model-selector">
+                            <div class="dropdown">
+                                <button class="dropdown-btn" id="dropdownBtn">
+                                    <i class="fas fa-cube"></i>
+                                    <span id="selectedModel">Select Model</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="dropdown-content" id="dropdownContent"></div>
+                            </div>
+                        </div>
+
+                        <!-- Model Information -->
+                        <div class="model-info" id="modelInfo"> 
+                            <b>Description</b><br><span id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, enim labore? Autem voluptatibus impedit officiis quos doloribus, magnam eum voluptas perspiciatis, quaerat architecto cupiditate quidem cumque asperiores, pariatur iusto natus!</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="logoNName">
+                     <div id="logo"></div>
+                     div#name
+                </div>
+                
+                <!-- Loading Overlay -->
+                <div class="loading-overlay" id="loadingOverlay">
+                    <div class="loading-spinner">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        <p>Loading 3D Model...</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
