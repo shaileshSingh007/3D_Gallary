@@ -8,10 +8,11 @@
 body {
     font-family: 'Inter', sans-serif;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    min-height: 100%;
+    height: 100%;
     width:100%;
     color: #333;
     overflow: hidden;
+    touch-action: none;
 }
 
 .container {
@@ -45,6 +46,18 @@ body {
     background: transparent;
     overflow: hidden;
 }
+
+/* logo */
+#logoNName{
+    width:8vh;
+    height:8vh;
+    border-radius:50%;
+    position: absolute; left:2vh;
+    top: 2vh;
+    z-index: 2000;
+}
+
+
 
 /* Details Panel Overlay - At Bottom of Canvas */
 .details-panel-overlay {
