@@ -56,9 +56,12 @@ html,body {
     width:8vh;
     height:8vh;
     border-radius:50%;
-    position: absolute; left:2vh;
+    position: fixed; left:2vh;
     top: 2vh;
     z-index: 2000;
+    opacity: 0.4;
+    border:1px solid cyan;
+    background: url('./logo.jpg') no-repeat center/100% 100%;
 }
 
 

@@ -83,15 +83,17 @@ function setupIframeEvents() {
         showLoading(true);
     });
     
-    // Hide loading when iframe finishes loading
+    // Hide loading when iframe finishes loading, but add a delay to ensure model is visible
     iframe.addEventListener('load', () => {
-        showLoading(false);
-        isLoading = false;
-        
         // Add fade-in animation if enabled
         if (ui.animations.enabled) {
             document.querySelector('.model-container').classList.add('fade-in');
         }
+        // Keep loader for at least 2 seconds after load event
+        setTimeout(() => {
+            showLoading(false);
+            isLoading = false;
+        }, 2000); // 2 seconds delay
     });
     
     // Handle iframe errors
