@@ -50,17 +50,11 @@ const MODEL_CONFIG = {
          model7: {
             name: "POWERPACK",
             type: "3D Environment", 
-            url: "https://my.spline.design/untitledcopy-lcrvsksXNF40IIg9KbDVd99w/",
+            url: "https://my.spline.design/untitled-PJDHUkB3K9yQARcFIQRaSEiW/",
             icon: "fas fa-cube",
             description: "3D powerpack used in industrial sea applications, showcasing its design and functionality. This model highlights the advanced engineering and user-friendly interface of the powerpack, making it a perfect fit for modern applications."
-        },
-        model8: {
-            name: "Creative Hover Effect",
-            type: "3D Environment", 
-            url: "https://my.spline.design/whatido-aa1ab43b5a075f09af2012455fa8073e/",
-            icon: "fas fa-book-open",
-            description: "creative hover effect in 3D, showcasing my skills in frontend development and design. This model features interactive elements that respond to user actions, providing a dynamic and engaging experience."
-        },
+        }
+         
         // Add more models here...
         //https://my.spline.design/untitledcopy-lcrvsksXNF40IIg9KbDVd99w/
     },
